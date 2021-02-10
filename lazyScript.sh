@@ -1,5 +1,8 @@
 #!/bin/bash
-n=1
+n=1  #To count commits
+greenback="\0033[1;37;42m" #to change text color/background
+resetvid="\0033[0m"
+
 echo "Lazy Pull/Pusher"
 echo "Enter the update interval (in minutes) between each push (15 => 15 mins between updates)"
 #Getting interval (integers only)
@@ -12,9 +15,7 @@ if ! [[ "$scale" =~ ^[0-9]+$ ]]
 fi
 done
 
-greenback="\0033[1;37;42m"
-resetvid="\0033[0m"
-
+#Infinite loop to 
 while :
 do 
     if [ -d .git ]; then
