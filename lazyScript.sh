@@ -5,7 +5,8 @@ echo "Enter the update interval (in minutes) between each push (15 => 15 mins be
 
 until [[ "$scale" =~ ^[0-9]+$ ]];
 do
-read scale
+read -p "Interval Time: " scale
+
 echo "Sorry integers only"
 done
 echo "Is number!"
@@ -13,3 +14,13 @@ echo "Is number!"
 while:
 do
     if [ -d .git ]; then
+        git status
+        git pull
+        git add .;
+        git commit -m " Lazy Push "
+        git push
+        echo "Commit $n Made"
+        n=$(($n + 1));
+    else
+        echo "Sorry,no Git Repo here"
+    fi
