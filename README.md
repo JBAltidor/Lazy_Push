@@ -5,6 +5,7 @@ The script does the pull/pushing routine for you.
 Just git it an interval, open a new terminal and let it work.
 
 To Use :
--Copy th
+-Copy 'LazyScript.sh' into your repository
+
 To stop just Ctrl+C;
 
