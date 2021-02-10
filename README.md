@@ -2,7 +2,6 @@
 Bash script to automatically pull/push a git repository.
 
 The script does the pull/pushing routine for you. For those who forget( Like me! ).
-Just give it an interval and let it work.
 
 
 To Use :
