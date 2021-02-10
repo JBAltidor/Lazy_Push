@@ -12,16 +12,19 @@ fi
 done
 
 
-# while:
-# do
-#     if [ -d .git ]; then
-#         git status
-#         git pull
-#         git add .;
-#         git commit -m " Lazy Push "
-#         git push
-#         echo "Commit $n Made"
-#         n=$(($n + 1));
-#     else
-#         echo "Sorry,no Git Repo here"
-#     fi
+while:
+do
+    if [ -d .git ]; then
+        git status
+        git pull
+        git add .;
+        git commit -m " Lazy Push "
+        git push
+        echo "Commit $n Made"
+        n=$(($n + 1));
+    else
+        echo "Sorry,no Git Repo here"
+    fi
+    d=$(($scale * 60));
+    sleep $d;
+done
