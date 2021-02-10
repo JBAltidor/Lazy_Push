@@ -22,13 +22,13 @@ do
         git status #get the status
         git pull #Pull changes 
         git add .; #Add all files
-        git commit -m " Lazy Push "
-        git push
-        echo -e "$greenback Commit $n was made $resetvid"
+        git commit -m " Lazy Push " #Commit
+        git push #Push
+        echo -e "$greenback Commit $n was made $resetvid" #Say the push was successful
         n=$(($n + 1));
     else
-        echo "Sorry,no Git Repo here"
+        echo "Sorry,no Git Repo here" #if it's not a git repo ,abort
     fi;
     d=$(($scale * 60));
-    sleep $d;
+    sleep $d; #Wait for the given interval time in seconds
 done
