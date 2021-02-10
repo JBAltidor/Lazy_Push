@@ -6,7 +6,7 @@ echo "Enter the update interval (in minutes) between each push (15 => 15 mins be
 until [[ "$scale" =~ ^[0-9]+$ ]];
 do
 read -p "Interval Time: " scale
-
+if ![[ "$scale" =~ ^[0-9]+$ ]];
 echo "Sorry integers only"
 done
 echo "Is number!"
