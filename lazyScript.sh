@@ -23,7 +23,7 @@ do
         git add .;
         git commit -m " Lazy Push "
         git push
-        echo "$greenback Commit $n was made $resetvid"
+        echo -e "$greenback Commit $n was made $resetvid"
         n=$(($n + 1));
     else
         echo "Sorry,no Git Repo here"
