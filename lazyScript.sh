@@ -15,13 +15,13 @@ if ! [[ "$scale" =~ ^[0-9]+$ ]]
 fi
 done
 
-#Infinite loop to 
+#Infinite loop to do the work
 while :
 do 
-    if [ -d .git ]; then
-        git status
-        git pull
-        git add .;
+    if [ -d .git ]; then #if it's a git repo
+        git status #get the status
+        git pull #Pull changes 
+        git add .; #Add all files
         git commit -m " Lazy Push "
         git push
         echo -e "$greenback Commit $n was made $resetvid"
