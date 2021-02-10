@@ -10,4 +10,6 @@ echo "Sorry integers only"
 done
 echo "Is number!"
 
+while:
 do
+    if [ -d .git ]; then
