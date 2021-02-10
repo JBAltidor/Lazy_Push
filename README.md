@@ -1,7 +1,7 @@
 # Lazy_Push
 Bash script to automatically pull/push a git repository
 
-The script does the pull/pushing routine for you. For those who forget (or )
+The script does the pull/pushing routine for you. For those who forget .
 Just git it an interval, open a new terminal and let it work.
 
 To Use :
@@ -13,3 +13,4 @@ To Use :
 To stop :
 - Ctrl+C;
 
+PS: A good commit message is alwas a good idea , so beware. You can also change the defaut "Lazy Push" message
