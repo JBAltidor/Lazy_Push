@@ -11,7 +11,9 @@ if ! [[ "$scale" =~ ^[0-9]+$ ]]
         echo "Sorry integers only"
 fi
 done
-Red=$'\e[1;31m'
+
+greenback="\0033[1;37;42m"
+resetvid="\0033[0m"
 
 while :
 do 
@@ -21,7 +23,7 @@ do
         git add .;
         git commit -m " Lazy Push "
         git push
-        echo "$Red Commit $n was made"
+        echo "$greenback Commit $n was made $resetvid"
         n=$(($n + 1));
     else
         echo "Sorry,no Git Repo here"
