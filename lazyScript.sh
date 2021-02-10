@@ -44,6 +44,6 @@ do
         echo "Fatal! This is Not a Git Repo"
         git rev-parse --git-dir 2> /dev/null;
     fi;
-    d=$(($inter * 60));
+    d=$(($scale * 60));
     sleep $d;
 done
