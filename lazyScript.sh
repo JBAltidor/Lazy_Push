@@ -11,26 +11,9 @@ if ! [[ "$scale" =~ ^[0-9]+$ ]]
         echo "Sorry integers only"
 fi
 done
-
-
-# do
-#     if [ -d .git ]; then
-#         git status
-#         git pull
-#         git add .;
-#         git commit -m " Lazy Push "
-#         git push
-#         echo "Commit $n Made"
-#         n=$(($n + 1));
-#     else
-#         echo "Sorry,no Git Repo here"
-#     fi
-#     d=$(($scale * 60));
-#     sleep $d;
-# done
+Red=$'\e[1;31m'
 
 while :
-
 do 
     if [ -d .git ]; then
         git status
@@ -38,8 +21,7 @@ do
         git add .;
         git commit -m " Lazy Push "
         git push
-        echo $'\e[1;33m'Commit $n was made'\e[0m'
-        # echo "Commit $n was made"
+        echo "$Red Commit $n was made"
         n=$(($n + 1));
     else
         echo "Sorry,no Git Repo here"
