@@ -38,7 +38,7 @@ do
         git add .;
         git commit -m " Lazy Push "
         git push
-        $ echo $'\e[1;33m'Commit $n was made'\e[0m'
+        echo $'\e[1;33m'Commit $n was made'\e[0m'
         # echo "Commit $n was made"
         n=$(($n + 1));
     else
