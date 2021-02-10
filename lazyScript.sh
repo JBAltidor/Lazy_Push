@@ -9,10 +9,5 @@ read scale
 echo "Sorry integers only"
 done
 echo "Is number!"
-if ! [[ "$scale" =~ ^[0-9]+$ ]]
-    then
-        echo "Sorry integers only"
-fi
-
 
 n = 1
