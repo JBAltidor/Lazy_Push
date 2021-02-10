@@ -10,5 +10,6 @@ To Use :
 - run 'bash LazyScript.sh'
 - Enter an interval period (how much minutes you want between updates)
 
-To stop just Ctrl+C;
+To stop :
+- Ctrl+C;
 
