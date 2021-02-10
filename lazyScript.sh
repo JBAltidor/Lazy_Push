@@ -33,16 +33,15 @@ while :
 
 do 
     if [ -d .git ]; then
-        echo "This is the current Repo Status"
         git status
+        git pull
         git add .;
         git commit -m " Lazy Push "
         git push
-        echo "Commit $n Made"
+        echo "Commit $n was made"
         n=$(($n + 1));
     else
-        echo "Fatal! This is Not a Git Repo"
-        git rev-parse --git-dir 2> /dev/null;
+        echo "Sorry,no Git Repo here"
     fi;
     d=$(($scale * 60));
     sleep $d;
