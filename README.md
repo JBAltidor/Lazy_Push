@@ -14,4 +14,4 @@ To Use :
 To stop :
 - Ctrl+C;
 
-PS: A good commit message is alwas a good idea , so beware. You can also change the defaut "Lazy Push" message
+PS: A good commit message is alwas a good idea , so beware. You can also change the defaut "Lazy Push" message.
